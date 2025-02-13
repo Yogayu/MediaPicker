@@ -148,7 +148,7 @@ struct StandardConrolsCameraView: View {
             .padding(.top, 24)
             .padding(.bottom, safeAreaInsets.bottom + 50)
         }
-        .background(theme.main.cameraBackground)
+        .background(.black)
         .onEnteredBackground(perform: cameraViewModel.stopSession)
         .onEnteredForeground(perform: cameraViewModel.startSession)
         .onReceive(cameraViewModel.capturedPhotoPublisher) {
